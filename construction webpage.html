@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://th.bing.com/th/id/R.6288dd8619a2e684255edfb539e0ea1b?rik=hjrneetqGPw5mg&riu=http%3a%2f%2fsmartcity.eletsonline.com%2fwp-content%2fuploads%2f2014%2f11%2findia-construction-labour-reuters-301213.jpg&ehk=EDdDTzyqno1bFUf3RUzEawAd9YajN0cY46cYvYM5G6Q%3d&risl=&pid=ImgRaw&r=0");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">S.S. Construction</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Construction Materials</h1>
+      <p>WELCOME TO MY WEBSITE, CHECK ALL THE STUFFS AND RATES AND GIVE FEEDBACK FOR IMPROVEMENT.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">Top Products</p>
+        <p class="work-text">AAC Blocks, Adhesives, Aggregates, Bricks, Cement, Mortars, Paints, Plywood, Sand, TMT Bars, Putty, Tiles</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">Delivery Locations</p>
+        <p class="work-text">We deliver in all the places of the India from major cities like Delhi, Chennai, Gujrat, Mumbai, Kolkata, Bhopal,etc. to minor cities like Banda, Kanpur, Assam, Shimla, Aurangabad, Patna, etc.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">Top Brands</p>
+        <p class="work-text">Ambuja Cements, Asian Paints, Century Ply, Kajaria, TATA Tiscon, Ultratech, ACC Cement, Berger Paints, Birla Gold, Birla White, Dulux Paints, Essar Steel, Grip TMT, Indigo Cement, Jaypee Cement, Kamdhenu Group, Mycem Cement, etc.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About The Website</h2>
+        <p>
+            S.S. Construction is a team of young, energetic and dedicated professionals who want to bring a big change in the way construction industry does its purchasing today. 
+            S.S._construction.com is an online purchase manager for all the needs of construction materials (also known as products) and services. It minimises your purchase hassles and helps you save time, energy and costs.
+        </p>
+
+        <br>
+        <h3>For Buyers:</h3>
+        <p>
+            S.S. Construction works as an online purchase manager which identifies only the qualified sellers, matches them as per your requirement, helps you negotiate best price and finalize the orders, reducing your time, energy and cost substantially.
+        </p>
+        <ul>
+          <li>One stop place to find only the authentic sellers who are Original Equipment Manufacturers (OEM) of the construction materials and services that precisely match your product or service type, estimated order quantity and delivery location requirement.</li>
+          <li> One stop place to compare same category materials and services from different OEMs.</li>
+          <li>An online place to get the best possible price without hassle of negotiations with multiple sellers via request for quotation or reverse auction.</li>
+          <li> One stop place to find innovative, recently launched and even discounted materials and services.</li>
+          <li>Online place for managing the inventory most effectively.</li>
+          <li>Only place to get data analysis and reports that will help you save time, energy and costs.</li>
+        </ul>
+
+<br>
+<h3>For Sellers:</h3>
+<p>
+    S.S. Construction is a place where you get high value buyers without giving you any unwanted leads, also gives an option of offloading inventory through Auction. It gives direct opening to new markets to expand your business.
+</p>
+    <ul>
+      <li>Only place to find authentic buyers of construction materials and services from the areas you have decided to serve.</li>
+      <li> Only place which allows you to offload excess inventory by way of auction to get optimum price.</li>
+      <li>Only place which allows to display and interact with pan India clients for hardly any expense.</li>
+      <li>Online place for managing the inventory most effectively.</li>
+      <li>Only place to get data analysis and reports that will help you improve your profitability.</li>
+    </ul>
+
+<br>
+<h3>Our Vision</h3>
+<p>A World Beyond Purchase Hassles.</p>
+
+<br>
+<h3>Our Mission</h3>
+<p>To become world's leading solution provider that will save time, energy and cost for construction industry in its need to purchase material and services.</p>
+
+<br>
+<h3>Our Values</h3> 
+
+<h4>Integrity</h4>
+<ul>
+    <li>I will act ethically, honestly and openly in everything I do.</li>
+    <li>I will show courage to do and say right thing every time.</li>
+    <li>I will always honor commitments I make to best of my abilities.</li>
+    <li>I will be accountable for failure and success of everything I do and will not blame others.</li>
+</ul>
+
+<br>
+<h4>Service</h4>
+<ul>
+    <li>I will be able to provide the best services and products I can.</li>
+    <li>I will put customers at the center of what we do.</li>
+    <li>I will always pay attention to customers' needs and offer the best available to solve their problems.</li>
+    <li>I will always strive to surpass customers' expectations.</li>
+</ul>
+
+
+<br>
+<h4>Excellence</h4>
+<ul>
+    <li>I will use my knowledge, skills and resources to deliver the best, sustainable results in everything I do.</li>
+    <li>I will always aim to give flawless delivery and learn from my mistakes.</li>
+    <li>I will take pride in my own work and that of my team's work.</li>
+    <li>I will actively contribute to the performance, development and engagement of ConstroBazaar team.</li>
+    <li>I will create the environment to attract and keep the best people who share our values.</li>
+</ul>
+
+<br>
+<h4>Innovative</h4>
+<ul>
+    <li>I will always be passionate about improving things.</li>
+    <li>I will strive to be innovative and aim to find better ways to do things.</li>
+    <li>I will protect and enhance our reputation and legacy at all times.</li>
+    <li>I will find ways to positively impact all of the customers we interact with.</li>
+    <li>I will always value sustainable progress as much as immediate achievements.</li>
+</ul>
+      </div>
+      <img src="https://www.clemson.edu/cecas/departments/ce/images/research/building-materials.jpg" alt="me">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; All Rights are reserved.</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
